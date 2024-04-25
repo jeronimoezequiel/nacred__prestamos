@@ -1,0 +1,63 @@
+:root {
+    --fuente-poppins: 'Poppins', sans-serif;
+    --fuente-open-sans: 'Open Sans', sans-serif;
+    --fuente-roboto: 'Roboto';
+
+    
+    --black: #0e0e0e;
+    --white: #ffffff;
+    --grey: #eee;
+    --gray: hsl(0, 0%, 41%);
+    --dark-grey: #333;
+    --orange: #fe8100;
+    --green: #2cba10;
+    --main-hue: 208;
+    --input-bg: hsla(var(--main-hue), 50%, 50%, 6.5%);
+    --input-bg-hover: hsla(var(--main-hue), 50%, 50%, 14%);
+    --light-text-color: #9ca7b6;
+    --input-text: #8c9aaf;
+}
+
+body {
+    font-family: var(--fuente-poppins);
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.button-primary {
+    color: var(--black);
+    background-color: var(--orange);
+    font-weight: bold;
+}
+
+.button-primary:hover {
+    background-color: var(--green);
+    transition: background-color 0.3s;
+    color: var(--white);
+}
+
+.button-secondary {
+    color: var(--white);
+    background-color: var(--black);
+    font-weight: 300;
+}
+
+.button-secondary:hover {
+    background-color: var(--white);
+    transition: background-color 0.3s;
+    color: var(--black);
+    border: 1px solid var(--dark-grey);
+}
+
+.glove {
+    background-color: var(--green);
+}

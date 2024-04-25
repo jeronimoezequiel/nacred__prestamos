@@ -1,0 +1,8 @@
+.topbar {
+    background: transparent; /* Fondo transparente */
+    height: 4.3vh;
+    width: 100%;
+    position: fixed;
+    z-index: 8;
+    backdrop-filter: blur(10px);
+}
