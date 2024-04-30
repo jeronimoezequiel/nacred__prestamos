@@ -197,8 +197,9 @@ h2,
         background: orange;
         border-radius: 50px;
         height: 9vh;
-        max-width: 100%;
-        margin-left: 4%;
+        width: 71%;
+        left: 50%;
+        transform: translateX(-50%);
         position: fixed;
         z-index: 9;
     }
@@ -239,7 +240,7 @@ h2,
         font-size: 15px;
         border: 1px solid orange;
         background: white;
-        margin-left: 76px;
+        margin-left: 123px;
         height: 6vh;
     }
 }

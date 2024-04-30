@@ -971,7 +971,7 @@ outline: none; /* Elimina el contorno al hacer clic */
         justify-content: center; /* Centra el contenido horizontalmente */
         align-items: center;     /* Centra el contenido verticalmente */
         height: 500px;     
-        width: 114.6%;
+        /* width: 114.6%; */
         margin: 30px -95px;
     }
     
