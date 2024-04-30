@@ -1,0 +1,59 @@
+
+
+
+@media screen and (min-width: 800px) {
+    #hero-medios {
+        background-image: url("../assets/pagos.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 95vh;
+    }
+    
+    .section__1-medios-de-pago {
+        max-width: 42%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-left: 28%;
+        margin-top: 4%;
+    }
+
+    .medios-de-pago {
+        position: relative; /* Posición fija */
+        top: 0; /* Al principio de la pantalla */
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+    }
+
+    .wrapper-telefono::before {
+        display: none;
+    }
+
+    .wrapper-telefono__title {
+        font-size: 3rem;
+        color: var(--white);
+    }
+
+    .wrapper-telefono__title:hover {
+        color: var(--black);
+    }
+
+    #medios-de-pago-email {
+        text-align: center;
+        border-radius: 20px;
+        padding: 2rem;
+        font-size: 2.3rem;
+        color: var(--green)
+    }
+
+    #medios-de-pago-email:hover {
+        color: var(--orange);
+    }
+
+    .medios-de-pago-rojo {
+        color: rgb(255 43 0);
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,6 @@
+#hero {
+    background-image: url("../assets/faq.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+}
