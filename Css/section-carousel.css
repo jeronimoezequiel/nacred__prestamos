@@ -9,6 +9,7 @@
     background-color: var(--white);
     z-index: 0;
     position: relative;
+    margin-top: 6%;
 }
 
 .carousel__section-cards {

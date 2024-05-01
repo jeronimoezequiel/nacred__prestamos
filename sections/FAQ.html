@@ -23,56 +23,119 @@
 </head>
 <body>
     
+    <!-- -------------------------- TOPBAR -------------------------------------- -->
+    
     <div class="topbar">
     
     </div>
 
-    <div class="hero" id="hero">
-        <header class="header">
-            <img class="logo" src="../assets/Logo-nacred-2.png" alt="Logo">
-            <button class="open-menu" id="open-menu">
-                <ion-icon name="menu"></ion-icon>
-            </button>
+    <!-- -------------------------- NAV -------------------------------------- -->
 
-            <!-- MOBILE -->
-            <div class="mobile-menu disabled" id="mobile-menu">
-                <div class="mobile-menu__header">
-                <img class="logo" src="./assets/Logo-nacred-2.png" alt="Logo">
-                <button class="close-menu" id="close-menu">
-                    <ion-icon name="close-circle-outline"></ion-icon>
-                </button>
+    <header id="hero_medios">
+        <div class="navbar">
+            <div class="logo"><a href="#">LOGO Nacred</a></div>
+                <ul class="links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../sections/medios-de-pago.html">Medios de pago</a></li>
+                <li><a href="../sections/FAQ.html">Preguntas Frecuentes</a></li>
+                </ul>
+        
+                <a href="#" class="action_btn">Solicita tu prestamo</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../sections/medios-de-pago.html">Medios de pago</a></li>
+            <li><a href="../sections/FAQ.html">Preguntas Frecuentes</a></li>
+            <li><a href="#" class="action_btn">Solicita tu prestamo</a></li>
+        </div>
+    </header>
+    
+    <!-- -------------------------- MAIN -------------------------------------- -->
+    <main>
+        
+        <section class="faq">
+            <div class="faq__container">
+                <div class="faq__heading">
+                    <img src="../assets/icon-star.svg" alt="" />
+                    <h1>FAQs</h1>
                 </div>
-                <nav class="mobile-menu__nav">
-                    <ul>
-                    <li><a href="../index.html">HOME</a></li>
-                    <li><a href="../sections/medios-de-pago.html">MEDIOS DE PAGO</a></li>
-                    <li><a href="../sections/FAQ.html">PREGUNTAS FRECUENTES</a></li>
-                    <li><a href="#">CONTACTO</a></li>
-                    <button class="btn-prestamo">SOLICITAR PRESTAMO</button>
-                </ul>
-                </nav>
+                
+                <div class="question">
+                    <h4>¿Quienes pueden acceder al préstamo?</h4>
+                    <img src="../assets/icon-plus.svg" alt="" class="plus" />
+                    <img src="../assets/icon-minus.svg" alt="" class="cross hidden" />
+                </div>
+                
+                <p class="para hidden">
+                    Mayores de 18 años que residen en Argentina y cuenten con recibo de sueldo. Recordar que los préstamos se otorgan luego de la evaluación crediticia.
+                </p>
+                <hr />
+                <div class="question">
+                    <h4>Si soy Jubilado o Pensionado. ¿Qué documentación debo presentar?</h4>
+                    <img src="../assets/icon-plus.svg" alt="" class="plus" />
+                    <img src="../assets/icon-minus.svg" alt="" class="cross hidden" />
+                </div>
+                
+                <p class="para hidden">
+                    La documentación necesaria que debo presentar es: DNI + RECIBO DE SUELO o SERVICIO A MI NOMBRE.
+                </p>
+                <hr />
+                <div class="question">
+                    <h4>Si estoy en veraz. ¿Puedo acceder a un préstamo?</h4>
+                    <img src="../assets/icon-plus.svg" alt="" class="plus" />
+                    <img src="../assets/icon-minus.svg" alt="" class="cross hidden" />
+                </div>
+                
+                <p class="para hidden">
+                    Si. Si estas informado en veraz, te invitamos a que nos consultes para recibir asesoramiento personalizado
+                </p>
+                <hr />
+                <div class="question">
+                    <h4>¿Cómo puedo abonar las cuotas?</h4>
+                    <img src="../assets/icon-plus.svg" alt="" class="plus" />
+                    <img src="../assets/icon-minus.svg" alt="" class="cross hidden" />
+                </div>
+                
+                <p class="para hidden">
+                    Podes abonar las cuotas por medio de transferencia, debito o efectivo.
+                </p>
+                <hr />
+                <div class="question">
+                    <h4>¿Puedo pagar cuotas por adelantado?</h4>
+                    <img src="../assets/icon-plus.svg" alt="" class="plus" />
+                    <img src="../assets/icon-minus.svg" alt="" class="cross hidden" />
+                </div>
+                
+                <p class="para hidden">
+                    Si! Podés abonar las cuotas por adelantado. Esto te dara un BENEFICIO EXCLUSIVO.
+                </p>
+                <hr />
+                <div class="question">
+                    <h4>¿Cúal es el monto máximo que puedo solicitar en un préstamo?</h4>
+                    <img src="../assets/icon-plus.svg" alt="" class="plus" />
+                    <img src="../assets/icon-minus.svg" alt="" class="cross hidden" />
+                </div>
+                
+                <p class="para hidden">
+                    En Nacred te prestamos hasta $1.000.000 de pesos. Este monto no esta sujeto a la evaluación crediticia al momento de solicitarlo.
+                </p>
             </div>
             
-            <!-- DESKTOP -->
-            <nav class="desktop-menu">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../sections/medios-de-pago.html">Medios de pago</a></li>
-                    <li><a href="../sections/FAQ.html">Preguntas Frecuentes</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <a href="../sections/prestamo.html"><button class="button-prestamo button-primary">Solicitar Prestamo</button></a>
-                </ul>
-            </nav>
-        </header>
+            <div class="attribution">
+                Design by
+                <a href="#" target="_blank"
+                    >BlackIT®</a
+                >. Coded by <a href="#">Jeronimo Núñez</a>.
+            </div>
+        </section>
 
-        <div class="wrapper">
-            <div class="wrapper__header">
-                <h2>Te prestamos hasta $1.000.000</h2>
-            </div>
-            </div>
-            
-    </div>
+    </main>
     
-    
+
+    <script src="../Js/faq.js"></script>
 </body>
 </html>

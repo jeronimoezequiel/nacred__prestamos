@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Ion Icons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Fav-icon -->
     <link rel="shortcut icon" href="./assets/logo-nacred-analisis.png" type="image/x-icon">
     <!-- Css Style -->
@@ -23,49 +25,37 @@
   </head>
   <body>
 
+    <!-- -------------------------- TOPBAR -------------------------------------- -->
+
     <div class="topbar">
       
     </div>
 
-    <div class="hero">
-      <header class="header">
-        <img class="logo" src="./assets/Logo-nacred-2.png" alt="Logo">
-        <button class="open-menu" id="open-menu">
-          <ion-icon name="menu"></ion-icon>
-        </button>
+    <!-- -------------------------- NAV -------------------------------------- -->
 
-        <!-- MOBILE -->
-        <div class="mobile-menu disabled" id="mobile-menu">
-          <div class="mobile-menu__header">
-            <img class="logo" src="./assets/Logo-nacred-2.png" alt="Logo">
-            <button class="close-menu" id="close-menu">
-              <ion-icon name="close-circle-outline"></ion-icon>
-            </button>
-          </div>
-          <nav class="mobile-menu__nav">
-            <ul>
-              <li><a href="./index.html">HOME</a></li>
-              <li><a href="./sections/medios-de-pago.html">MEDIOS DE PAGO</a></li>
-              <li><a href="./sections/FAQ.html">PREGUNTAS FRECUENTES</a></li>
-              <li><a href="#">CONTACTO</a></li>
-              <button class="btn-prestamo">SOLICITAR PRESTAMO</button>
-            </ul>
-          </nav>
-        </div>
-      
-        <!-- DESKTOP -->
-        <nav class="desktop-menu">
-          <ul>
-            <li><a href="./index.html">Home</a></li>
+      <header>
+        <div class="navbar">
+          <div class="logo"><a href="#">LOGO Nacred</a></div>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
             <li><a href="./sections/medios-de-pago.html">Medios de pago</a></li>
             <li><a href="./sections/FAQ.html">Preguntas Frecuentes</a></li>
-            <li><a href="#">Contacto</a></li>
-            <a href="./sections/prestamo.html"><button class="button-prestamo button-primary">Solicitar Prestamo</button></a>
           </ul>
-        </nav>
-      </header>
+          
+          <a href="#" class="action_btn">Solicita tu prestamo</a>
+          <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
 
-      <!-- CAROUSEL -->
+        <div class="dropdown_menu">
+          <li><a href="index.html">Home</a></li>
+            <li><a href="./sections/medios-de-pago.html">Medios de pago</a></li>
+            <li><a href="./sections/FAQ.html">Preguntas Frecuentes</a></li>
+            <li><a href="#" class="action_btn">Solicita tu prestamo</a></li>
+        </div>
+
+        <!-- CAROUSEL -->
       <section class="carousel__section">
         <article class="carousel__section-cards carousel__section-container">
 
@@ -138,8 +128,9 @@
           <h2>Te prestamos hasta $1.000.000</h2>
         </div>
       </div>
-      
-    </div>
+      </header>
+
+      <!-- -------------------------- MAIN -------------------------------------- -->
 
     <main>
 
