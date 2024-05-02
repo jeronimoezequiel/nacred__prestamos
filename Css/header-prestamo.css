@@ -1,0 +1,346 @@
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1rem;
+}
+
+a:hover {
+    color: orange;
+}
+
+
+header {
+    position: relative;
+    padding: 2rem 8rem;
+}
+
+.navbar {
+    position: fixed;
+    top: 4.3vh;
+    left: 0;
+    right: 0;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    padding: 0.5rem 2rem;
+    z-index: 999;
+    width: 100vw;
+}
+
+.navbar_prestamo {
+    background: var(--grey);
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn {
+    color: var(--black);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background-color: orange;
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    background-color: var(--green);
+    color: var(--black);
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+/* DROPDOWN */
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 200px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.circle-container {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 98vw;
+    height: 64vh;
+    overflow: hidden;
+    transform: rotate(180deg);
+    z-index: 1;
+}
+
+.circle {
+    width: 160vw;
+    height: 200vw;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title {
+    color: var(--orange);
+    position: absolute;
+    top: 50%; /* Ajusta la posición vertical del título */
+    left: 50%; /* Ajusta la posición horizontal del título */
+    transform: translate(-50%, -90%); /* Centra el título en relación al círculo */
+    margin: 0; /* Elimina el margen predeterminado del título */
+    z-index: 2;
+}
+
+h1 {
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+.prestamo_subtitle {
+    display: flex;
+    gap: 3rem;
+    padding: 3rem 15rem;
+}
+
+.prestamo_subtitle span {
+    color: var(--orange);
+}
+
+.prestamo_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.prestamo_card {
+    width: 20%;
+    background: var(--orange);
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    transition: 0.3s;
+    height: 18vw;
+    border-radius: 26px;
+}
+.card_header {
+    text-align: center;
+    padding: 50px 10px;
+    background: blue;
+    color: var(--white);
+}
+
+.card_body {
+    padding: 30px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_icon {
+    font-size: 8rem;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    color: var(--white);
+}
+
+.card_body .prestamo_btn {
+    display: block;
+    color: var(--white);
+    text-align: center;
+    background-color: var(--black);
+    margin-top: 0px;
+    text-decoration: none;
+    padding: 4px 17px;
+    border-radius: 20px;
+}
+
+.prestamo_card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    border: 2px solid var(--green);
+}
+
+/* Capa negra translúcida */
+.prestamo_card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro translúcido */
+    opacity: 0; /* Inicialmente, la capa es transparente */
+    transition: opacity 0.3s; /* Agrega una transición suave */
+    display: flex; /* Activa el modelo de caja flexible */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+.prestamo_card:hover::before {
+    opacity: 1; /* Hace que la capa sea completamente visible cuando se hace hover */
+    border-radius: 26px;
+    cursor: pointer;
+    border: 2px solid var(--green);
+}
+
+/* Texto dentro de la capa negra translúcida */
+.prestamo_card::before h3 {
+    color: white; /* Color del texto */
+    font-size: 24px; /* Tamaño de fuente del texto */
+    text-align: center; /* Alineación del texto */
+}
+
+.card_overlay_text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.prestamo_card:hover .card_overlay_text {
+    opacity: 1;
+    padding: 1rem;
+}
+
+.card_overlay_text h3 {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.beneficios_container {
+    margin: 20px;
+}
+
+.beneficios_row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.beneficios_card-01 {
+    background-color: red;
+    position: relative;
+    flex: 1;
+    max-width: 350px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.beneficios_card-02 {
+    background-color: blue;
+    position: relative;
+    flex: 1;
+    max-width: 350px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+
+    .prestamo_card {
+        width: 40%;
+    }
+
+    .beneficios_card-01 {
+        flex: 100%;
+        max-width: 600px;
+    }
+
+    .beneficios_card-02 {
+        flex: 100%;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+    
+    .prestamo_card {
+        width: 80%;
+    }
+}
