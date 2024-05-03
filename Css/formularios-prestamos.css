@@ -1,0 +1,146 @@
+.fomularios {
+    min-height: 98vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #4070f4;
+    width: 78%;
+    border-radius: 20px;
+    translate: calc(50% - 33%);
+    margin: 3% 0;
+}
+
+.form_container {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: var(--white);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form_container .form_header {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form_container .form_header::before {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    height: 3px;
+    width: 27px;
+    background-color: #4070f4;
+    border-radius: 8px;
+}
+
+.form_container .form_form {
+    position: relative;
+    margin-top: 16px;
+    min-height: 360px;
+    background-color: var(--white);
+}
+
+.form_container .form_form .details {
+    margin-top: 30px;
+}
+
+.form_container .form_form .detail_title {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+}
+
+.form_container .form_form .fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form_form .fields .input-field {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 3 - 15px);
+    margin: 4px 0;
+}
+
+.input-field label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.input-field input {
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.input-field input:is(:focus, :valid) {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+.input-field input [type="date"]{
+    color: #707070;
+}
+
+.input-field input [type="date"]:valid{
+    color: #333;
+}
+
+.input-field select {
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+    appearance: none; /* Esto elimina el estilo predeterminado del selector */
+    background: url('data:image/svg+xml;utf8,<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="black" d="M14.5 7l-4 4-4-4"></path></svg>') no-repeat right 12px center/12px 12px; /* Agrega una flecha personalizada */
+}
+
+.input-field select:focus, .input-field select:valid {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+.form_container .form_form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    background-color: #4070f4;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: var(--white);
+    border-radius: 5px;
+    margin: 25px 0;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.form_form button:hover{
+    background-color: #265df2;
+}
+
+.form_form button i {
+    margin: 0 6px;
+}

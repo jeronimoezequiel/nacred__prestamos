@@ -282,7 +282,7 @@ h1 {
 }
 
 .beneficios_card-01 {
-    background-color: red;
+    background-color: #3F83F2;
     position: relative;
     flex: 1;
     max-width: 350px;
@@ -290,10 +290,14 @@ h1 {
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: var(--white);
 }
 
 .beneficios_card-02 {
-    background-color: blue;
+    background-color: #2B9C12;
     position: relative;
     flex: 1;
     max-width: 350px;
@@ -301,6 +305,31 @@ h1 {
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+}
+
+p {
+    padding: 1.5rem 1rem;
+    margin-top: 16px;
+}
+
+.beneficios_titles {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 5rem;
+    align-items: center;
+    font-weight: 300;
+    color: var(--white);
+}
+
+.beneficios_titles span {
+    color: var(--white);
+    font-weight: bold;
+    font-size: 2.2rem;
 }
 
 
