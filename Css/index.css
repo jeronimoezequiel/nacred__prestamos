@@ -481,6 +481,7 @@ outline: none; /* Elimina el contorno al hacer clic */
         display: flex;
         margin-left: 28%;
         margin-top: -16%;
+        background-color: #000;
     }
 
     .intro {
@@ -558,31 +559,19 @@ outline: none; /* Elimina el contorno al hacer clic */
 
 @media screen and (min-width: 800px) {
 
-    #miReproductor ::part(control-panel) {
-        display: none;
-    }    
-
-    /* #miReproductor{
-        margin-top: 45%;
-    } */
-    
     main {
         padding: 0rem 6rem;
     }
 
-    
-
     .intro {
         display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        margin-bottom: 5rem;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .intro > img {
         max-width: 100%;
-        grid-column: 1/6;
-        grid-row: 1/3;
-        margin: 27% 0 -40px 0;
+        grid-column: 2 / 4;
+        grid-row: 1 / 3;
     }
 
     .intro__info {
@@ -615,9 +604,15 @@ outline: none; /* Elimina el contorno al hacer clic */
     }
 
     .slogan__title {
-        color: var(--white);
+        color: var(--black);
         font-weight: 900;
-        text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
+        margin-bottom: -34%;
+        text-align: left;
+        font-size: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20%;
     }
 
     .intro__info h2,
@@ -631,6 +626,17 @@ outline: none; /* Elimina el contorno al hacer clic */
 
     .btn-desktop {
         display: block;
+    }
+
+    .button-prestamo {
+        border-radius: .6rem;
+        width: 70%;
+        padding: .8rem;
+        border: transparent;
+        font-size: 1.5rem;
+        margin-left: 18%;
+        margin-top: 29%;
+        color: white;
     }
 
     /* ---------------------------------- SECTION 2 ---------------------------------- */

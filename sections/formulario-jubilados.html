@@ -18,7 +18,7 @@
     <!-- Css Style -->
     <link rel="stylesheet" href="../Css/main.css">
 
-    <title>Tú prestamo | Nacred</title>
+    <title>Formulario Jubilados y Pensionados | Nacred</title>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -28,14 +28,16 @@
     <!-- -------------------------- TOPBAR -------------------------------------- -->
 
     <div class="topbar">
-    
+    <h4 class="topbar">
+      <!-- Agregar iconografía -->
+    </h4>
     </div>
 
     <!-- -------------------------- NAV -------------------------------------- -->
 
     <header>
         <div class="navbar navbar_prestamo">
-          <div class="logo"><a href="../index.html"><img src="../assets/Logo-nacred.jpg" alt=""></a></div>
+            <div class="logo"><a href="#">LOGO Nacred</a></div>
                 <ul class="links">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../sections/medios-de-pago.html">Medios de pago</a></li>
@@ -57,118 +59,88 @@
     </header>
 
 
-
-    <div class="circle-container">
-        <div class="circle">
-        </div>
-    </div>
-
-    <div class="title">
-        <h1>TÚ PRESTAMO EN 3 SIMPLES PASOS</h1>
-    </div>
-
-    <div class="prestamo_subtitle">
-        <h3>Elegí tu <span>prestamo</span></h3>
-        <h3>Completá el <span>formulario</span></h3>
-        <h3>Te <span>llamamos</span></h3>
-    </div>
-
-    <!-- -------------------------- MAIN -------------------------------------- -->
-
     <main>
 
-    <!-- -------------------------- cards -------------------------------------- -->
+      <section class="fomularios">
+        <div class="form_container">
+          <header class="form_header">
+            Formulario Jubilados y Pensionados
+            <p class="requisitos">Requisitos: <span>DNI + ULTIMO RECIBO DE HABERES + SERVICIO A TU NOMBRE</span></p>
+          </header>
+  
+          <form class="form_form" action="#">
+            <div class="form_formulario first">
+              <div class="details personal">
+                <span class="detail_title">Completá con tus datos personales</span>
+  
+                <div class="fields">
+                  <div class="input-field">
+                    <label>Nombre Completo</label>
+                    <input type="text" placeholder="Ingrese su Nombre" required>
+                  </div>
 
-        <div class="prestamo_row">
+                  <div class="input-field">
+                    <label>Fecha de Nacimiento</label>
+                    <input type="date" placeholder="Fecha de Nacimiento" required>
+                  </div>
 
-            <div class="prestamo_card">
-                <div class="card_body">
-                    <i class="fa-solid fa-people-group card_icon"></i>
-                    <span class="prestamo_btn">Estatales</span>
+                  <div class="input-field">
+                    <label>Género</label>
+                    <select id="genero" name="genero" required>
+                      <option value="seleccione-una-opcion">Selecciona una opción</option>
+                      <option value="hombre">Hombre</option>
+                      <option value="mujer">Mujer</option>
+                      <option value="prefiero-no-decirlo">Prefiero no decirlo</option>
+                      <option value="otro">Otro</option>
+                    </select>
+                  </div>
+
+                  <div class="input-field">
+                    <label>Email</label>
+                    <input type="text" placeholder="Ingrese su email" required>
+                  </div>
+
+                  <div class="input-field">
+                    <label>Número de télefono</label>
+                    <input type="number" placeholder="Ingrese su número de télefono" required>
+                  </div>
+
+                  <div class="input-field">
+                    <label>Ocupación</label>
+                    <input type="text" placeholder="Ingrese su ocupación" required>
+                  </div>
+
+                  <div class="input-field">
+                    <label>Provincia</label>
+                    <input type="text" placeholder="Escriba provincia" required>
+                  </div>
+
+                  <div class="input-field">
+                    <label>Localidad</label>
+                    <input type="text" placeholder="Escriba la localidad" required>
+                  </div>
+
+                  <div class="input-field">
+                    <label>Domicilio</label>
+                    <input type="text" placeholder="Escriba su domicilio actual" required>
+                  </div>
                 </div>
-                <!-- Texto para la capa negra translúcida -->
-                <div class="card_overlay_text">
-                  <a href="../sections/formularios.html" class="prestamo_btn"><h3>Clickea acá!</h3></a>
-                </div>
+
+                <button class="nextBtn">
+                  <span class="btnText">Enviar</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
             </div>
-
-            <div class="prestamo_card">
-                <div class="card_body">
-                    <i class="fa-solid fa-person-cane card_icon"></i>
-                    <span class="prestamo_btn">Jubilados/pensionados</span>
-                </div>
-                <!-- Texto para la capa negra translúcida -->
-                <div class="card_overlay_text">
-                  <a href="../sections/formulario-jubilados.html" class="prestamo_btn"><h3>Clickea acá!</h3></a>
-                </div>
-            </div>
-
-            <div class="prestamo_card">
-                <div class="card_body">
-                    <i class="fa-solid fa-child card_icon"></i>
-                    <span class="prestamo_btn">+18 años</span>
-                </div>
-                <!-- Texto para la capa negra translúcida -->
-                <div class="card_overlay_text">
-                  <a href="../sections/mayores.html" class="prestamo_btn"><h3>Clickea acá!</h3></a>
-                </div>
-            </div>
-
-            <div class="prestamo_card">
-                <div class="card_body">
-                    <i class="fa-solid fa-note-sticky card_icon"></i>
-                    <span class="prestamo_btn">Recibo de sueldo</span>
-                </div>
-                <!-- Texto para la capa negra translúcida -->
-                <div class="card_overlay_text">
-                  <a href="../sections/recibo-de-sueldo.html" class="prestamo_btn"><h3>Clickea acá!</h3></a>
-                </div>
-            </div>
-
-            <div class="prestamo_card">
-                <div class="card_body">
-                    <i class="fa-regular fa-credit-card card_icon"></i>
-                    <span class="prestamo_btn">Volver al inicio</span>
-                </div>
-                <!-- Texto para la capa negra translúcida -->
-                <div class="card_overlay_text">
-                  <a href="../index.html" class="prestamo_btn"><h3>Clickea acá!</h3></a>
-                </div>
-            </div>
-
+          </form>
+  
+  
+  
+  
+  
         </div>
-
-    <!-- -------------------------- cards -------------------------------------- -->
-    
-    <section class="section__5">
-
-        <div class="section__2-content">
-            <h4>Conocé los mejores</h4>
-            <h3 class="subtitle">beneficios para vos</h3>
-        </div>
-
-        <div class="beneficios_container">
-            <div class="beneficios_row">
-                <div class="beneficios_card-01">
-                    <h3 class="beneficios_titles">Podés sacar hasta <span>3 créditos paralelos</span></h3>
-                </div>
-                <div class="beneficios_card-01">
-                    <h3 class="beneficios_titles">Podés utilizar <span>PLAN 45</span></h3>
-                </div>
-            </div>
-
-            <div class="beneficios_row">
-                <div class="beneficios_card-02">
-                </div>
-                <div class="beneficios_card-02">
-                    <p>Plan 45 como beneficio de empezar a pagar a los 45 días si solicitas tu credito el 27 del mes corriente</p>
-                </div>
-            </div>
-        </div>
-        
-        
-
-    </section>
+      </section>
+      
     
     </main>
 <!-- -------------------------- FORMULARIO -------------------------------------- -->
@@ -276,9 +248,9 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDa64nzeCfK7wzmsRKUOFqtH5qWIqTYxAE&callback=initMap"></script>
-    <script src="./Js/maps.js"></script>
-    <script src="./Js/menu-mobile.js"></script>
-    <script src="./Js/app.js"></script>
-    <script src="./Js/form.js"></script>
+    <script src="../Js/maps.js"></script>
+    <script src="../Js/menu-mobile.js"></script>
+    <script src="../Js/app.js"></script>
+    <script src="../Js/form.js"></script>
   </body>
 </html>

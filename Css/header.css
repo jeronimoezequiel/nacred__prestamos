@@ -9,9 +9,12 @@ a {
 }
 
 a:hover {
-    color: orange;
+    color: #333;
 }
 
+.logo a img{
+    width: 100px;
+}
 
 header {
     position: relative;
@@ -23,13 +26,16 @@ header {
     top: 4.3vh;
     left: 0;
     right: 0;
-    height: 60px;
+    height: 54px;
     margin: 0 auto;
     display: flex;
     align-items: baseline;
     justify-content: space-around;
-    background: red;
-    padding: 0.5rem 2rem;
+    /* background: var(--orange); */
+    /* background: transparent;  */
+    /* backdrop-filter: blur(10px); */
+    background: #fbfbfb9c;
+    padding: 0.3rem 2rem;
     z-index: 999;
     width: 100vw;
 }
@@ -52,7 +58,7 @@ header {
 }
 
 .action_btn {
-    background-color: orange;
+    background-color: var(--black);
     color: var(--white);
     padding: 0.5rem 1rem;
     border: none;

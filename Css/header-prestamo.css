@@ -9,9 +9,13 @@ a {
 }
 
 a:hover {
-    color: orange;
+    color: #333;
+    font-weight: bold;
 }
 
+.logo a img{
+    width: 100px;
+}
 
 header {
     position: relative;
@@ -23,18 +27,20 @@ header {
     top: 4.3vh;
     left: 0;
     right: 0;
-    height: 60px;
+    height: 54px;
     margin: 0 auto;
     display: flex;
     align-items: baseline;
     justify-content: space-around;
-    padding: 0.5rem 2rem;
+    padding: 0.3rem 2rem;
     z-index: 999;
     width: 100vw;
+    background: #fbfbfb9c;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
 
 .navbar_prestamo {
-    background: var(--grey);
+    background-color: var(--white);
 }
 
 .navbar .logo a {
@@ -55,7 +61,7 @@ header {
 }
 
 .action_btn {
-    background-color: orange;
+    background-color: var(--black);
     color: var(--white);
     padding: 0.5rem 1rem;
     border: none;
@@ -80,7 +86,7 @@ header {
 /* DROPDOWN */
 .dropdown_menu {
     display: none;
-    position: absolute;
+    position: fixed;
     right: 2rem;
     top: 60px;
     height: 0;
@@ -94,7 +100,9 @@ header {
 }
 
 .dropdown_menu.open {
-    height: 200px;
+    height: 100%;
+    width: 90%;
+    top: 0;
 }
 
 .dropdown_menu li {
