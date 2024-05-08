@@ -37,7 +37,7 @@ header {
     background: #fbfbfb9c;
     padding: 0.3rem 2rem;
     z-index: 999;
-    width: 100vw;
+    width: 100%;
 }
 
 .navbar .logo a {
@@ -136,3 +136,10 @@ header {
         width: unset;
     }
 }
+
+@media (max-width: 425px) {
+    .navbar .toggle_btn {
+        display: block;
+    }
+}
+

@@ -1,4 +1,4 @@
-#hero {
+#hero_faq {
     background-image: url("../assets/faq.jpg");
     background-position: center;
     background-size: cover;
@@ -75,14 +75,34 @@
     margin-top: 40px;
 }
 
-@media (max-width: 565px) {
-    .faq__container {
-        width: 400px;
-    }
-}
 
 @media (max-width: 400px) {
     .faq__container {
         width: 350px;
     }
 }
+
+@media (min-width: 320px) and (max-width: 521px) {
+    #hero_faq {
+        background-image: url("../assets/faq.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 30vh;
+    }
+}
+
+@media (max-width: 565px) {
+    .faq__container {
+        width: 350px;
+    }
+}
+
+@media (min-width: 526px) and (max-width: 799px) {
+    #hero_faq {
+        background-image: url("../assets/faq.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 54vw;
+    }
+}
+

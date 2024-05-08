@@ -1,3 +1,38 @@
+.section__1-medios-de-pago h1 {
+    font-size: clamp(1.7em, 5vw, 5em);
+    padding: 1rem 2rem;
+}
+
+.section__2-medios-de-pago h4 {
+    font-size: clamp(1.7em, 5vw, 1em);
+    text-align: center;
+    margin-top: 0.7rem;
+}
+
+@media (min-width: 320px) and (max-width: 521px) {
+    #hero_medios {
+        background-image: url(../assets/pagos.jpg);
+        background-position: center;
+        background-size: cover;
+        min-height: 33%;
+        height: 78vw;
+    }
+}
+
+@media (min-width: 526px) and (max-width: 799px) {
+    #hero_medios {
+        background-image: url(../assets/pagos.jpg);
+        background-position: center;
+        background-size: cover;
+        max-width: 100%;
+        min-height: 33%;
+        height: 78vw;
+    }
+
+    .wrapper-telefono::before {
+        display: none;
+    }
+}
 
 @media screen and (min-width: 800px) {
     #hero_medios {
@@ -6,15 +41,6 @@
         background-size: cover;
         height: 95vh;
     }
-    
-    .section__1-medios-de-pago {
-        max-width: 42%;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        margin-left: 28%;
-        margin-top: 4%;
-    }
 
     .medios-de-pago {
         position: relative; /* Posición fija */
@@ -22,6 +48,11 @@
         z-index: 10;
         display: flex;
         justify-content: center;
+    }
+
+    .section__1-medios-de-pago h1 {
+        font-size: clamp(2em, 5vw, 3em);
+        padding: 1rem 2rem;
     }
 
     .wrapper-telefono::before {

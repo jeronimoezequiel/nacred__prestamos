@@ -2,8 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #4070f4;
-    min-height: 90vh;
+    background: var(--orange);
+    min-height: 84vh;
     margin: 3% 10%;
     border-radius: 20px;
     width: 80%;
@@ -138,7 +138,7 @@
     justify-content: center;
     height: 45px;
     max-width: 200px;
-    background-color: #4070f4;
+    background-color: var(--green);
     width: 100%;
     border: none;
     outline: none;

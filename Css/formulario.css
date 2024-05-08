@@ -11,7 +11,6 @@
 }
 
 .contact .contac__container {
-    height: 102vh;
     min-height: 700px;
     display: flex; /* Cambiar de grid a flex */
     justify-content: center; /* Centrar los elementos horizontalmente */
@@ -31,7 +30,8 @@
 .contact-heading h3 {
     font-weight: 600;
     color: var(--black);
-    font-size: 9vw;
+    /* font-size: 9vw; */
+    font-size: clamp(1.7em, 5vw, 5em);
     line-height: 0.9;
     white-space: nowrap;
 }
@@ -43,7 +43,7 @@
 .text {
     color: #9ca7b6;
     line-height: 1.1;
-    font-size: 5vw;
+    font-size: clamp(1.6em, 4vw, 3em);
 }
 
 .text a {
@@ -185,8 +185,23 @@ textarea.contact-input {
     .image-wrapper img {
         display: none;
     }
+
+    .cancelar {
+        display: none;
+    }
 }
 
+@media (min-width: 526px) and (max-width: 799px) {
+    .right,
+    .image-wrapper,
+    .image-wrapper img {
+        display: none;
+    }
+
+    .cancelar {
+        display: none;
+    }
+}
 
 /* Media Query para 800px */
 @media (min-width: 800px) {
