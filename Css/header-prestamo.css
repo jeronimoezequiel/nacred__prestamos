@@ -390,7 +390,7 @@ h1 {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 155vh;
         overflow: hidden;
         transform: rotate(270deg);
         max-width: 100%;
@@ -407,7 +407,7 @@ h1 {
     }
 
     .title {
-        top: 25%;
+        top: 37%;
     }
 
     .title h1 {
@@ -459,11 +459,46 @@ h1 {
     }
 
     .circle-container {
-        background-color: red;
+        width: 106.5%;
+        overflow-x: hidden;
+        height: 40vw;
     }
 
     .circle {
-        background-color: green;
+        width: 94vh;
+        height: 80vw;
+    }
+
+    .title {
+        color: var(--orange);
+        position: absolute;
+        top: 43%;
+        left: 65%;
+        transform: translate(-50%, -90%);
+        margin: -10%;
+        z-index: 2;
+    }
+
+    .title h1 {
+        font-size: 1.6rem;
+    }
+
+    .prestamo_subtitle {
+        padding: 0;
+        gap: 0rem;
+        margin-left: 1%;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .prestamo_subtitle h3 {
+        font-size: 1.1rem;
+    }
+
+    .prestamo_card {
+        width: 80%;
+        height: 50%;
     }
 }
+
 
