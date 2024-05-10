@@ -543,7 +543,7 @@ outline: none; /* Elimina el contorno al hacer clic */
 
     .intro {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .intro > img {
@@ -692,7 +692,7 @@ outline: none; /* Elimina el contorno al hacer clic */
 
     .card-container {
         width: 300px;
-        height: 300px;
+        height: 350px;
         position: relative;
         border-radius: 10px;
     }
@@ -766,10 +766,15 @@ outline: none; /* Elimina el contorno al hacer clic */
     }
     
     .card .content .heading {
-        font-size: 25px;
+        font-size: 23px;
         font-weight: 700;
         color: var(--white);
         text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .card .content p {
+        color: var(--white);
+        font-size: 13.5px;
     }
     
     .card:hover .content {

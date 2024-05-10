@@ -21,9 +21,14 @@
 .attribution {
     font-size: 11px;
     text-align: center;
+    white-space: nowrap; /* Mantener el texto en una sola línea */
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+    margin: 0;
 }
 
 .faq__container {
@@ -45,6 +50,7 @@
 
 .faq__container .faq__heading h1 {
     font-weight: 800;
+    font-size: 2rem;
 }
 
 .faq__container .question {
@@ -69,10 +75,6 @@
 
 .faq__container hr {
     border: 1px solid #d3d3d3;
-}
-
-.attribution {
-    margin-top: 40px;
 }
 
 
