@@ -275,8 +275,8 @@ h3 {
     background: #fff;
     border-radius: 50%;
     margin: 10px 6px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     font-size: 18px;
     display: flex;
     justify-content: center;
@@ -982,7 +982,7 @@ outline: none; /* Elimina el contorno al hacer clic */
     }
 
     .wrapper__social-media {
-        height: 8vh;
+        height: 11vh;
         border-radius: 60px;
         margin-top: 20px;
         background-color: #e8e8e8;

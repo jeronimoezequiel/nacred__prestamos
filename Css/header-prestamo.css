@@ -152,10 +152,10 @@ header {
     z-index: 2;
 }
 
-h1 {
+/* h1 {
     font-size: 3.2rem;
     text-align: center;
-}
+} */
 
 .prestamo_subtitle {
     display: flex;
@@ -337,6 +337,7 @@ h1 {
 
 
 /* RESPONSIVE DESIGN */
+
 @media (max-width: 992px) {
     .navbar .links,
     .navbar .action_btn {
@@ -453,6 +454,30 @@ h1 {
     }
 }
 
+@media only screen and (device-width: 428px) and (device-height: 926px) {
+    .circle-container {
+        height: 22vh;
+    }
+
+    .title {
+        margin: -49% -3%;
+    }
+
+    .prestamo_subtitle {
+        margin: 0% -55%;
+    }
+
+    .prestamo_subtitle h3 {
+        font-size: .99rem;
+        text-align: center;
+    }
+
+    .prestamo_card {
+        width: 80%;
+        height: 50%;
+    }
+}
+
 @media (max-width: 425px) {
     .navbar .toggle_btn {
         display: block;
@@ -500,5 +525,56 @@ h1 {
         height: 50%;
     }
 }
+
+@media only screen and (device-width: 393px) and (device-height: 852px) {
+        .title {
+            font-size: 2rem;
+            margin-top: -47%;
+            margin-left: -13%;
+        }
+
+        .prestamo_card {
+            width: 80%;
+            height: 50%;
+        }
+}
+
+@media only screen and (device-width: 390px) and (device-height: 844px) {
+    .title {
+        font-size: 2rem;
+        margin-top: -47%;
+        margin-left: -13%;
+    }
+}
+
+@media only screen and (device-width: 384px) and (device-height: 787px) {
+    .title {
+        font-size: 2rem;
+        margin-top: -41%;
+        margin-left: -13%;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 844px)  and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    .title {
+        margin: -45% -12%;
+    }
+}
+
+@media only screen and (device-width: 375px) and (device-height: 812px) {
+    .title {
+        margin: -45% -12%;
+    }
+}
+
+@media only screen and (device-width: 360px) and (device-height: 800px) {
+    .title {
+        font-size: 2rem;
+        margin-top: -41%;
+        margin-left: -13%;
+    }
+}
+
+
 
 
