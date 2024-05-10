@@ -464,7 +464,7 @@ header {
     }
 
     .prestamo_subtitle {
-        margin: 0% -55%;
+        padding: 1rem;
     }
 
     .prestamo_subtitle h3 {
