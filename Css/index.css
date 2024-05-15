@@ -869,7 +869,7 @@ outline: none; /* Elimina el contorno al hacer clic */
         border-radius: 50%;
         margin: 10px;
         width: 65px;
-        height: 65px;
+        height: 55px;
         font-size: 18px;
         display: flex;
         justify-content: center;
@@ -968,10 +968,6 @@ outline: none; /* Elimina el contorno al hacer clic */
     #map {
         width: 100%;             /* El mapa ocupará todo el ancho del contenedor */
         height: 100%;            /* El mapa ocupará todo el alto del contenedor */
-    }
-
-    #miReproductor {
-        margin-left: 10%;
     }
 }
 
