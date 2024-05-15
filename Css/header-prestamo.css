@@ -150,6 +150,7 @@ header {
     transform: translate(-50%, -90%); /* Centra el título en relación al círculo */
     margin: 0; /* Elimina el margen predeterminado del título */
     z-index: 2;
+    text-align: center;
 }
 
 /* h1 {
@@ -159,8 +160,9 @@ header {
 
 .prestamo_subtitle {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     padding: 3rem 17rem;
+    text-align: center;
 }
 
 .prestamo_subtitle span {
@@ -175,12 +177,12 @@ header {
 }
 
 .prestamo_card {
-    width: 20%;
+    width: 25%;
     background: var(--orange);
     border: 1px solid #ccc;
     margin-bottom: 50px;
     transition: 0.3s;
-    height: 18vw;
+    height: 22vw;
     border-radius: 26px;
 }
 .card_header {
@@ -213,7 +215,7 @@ header {
     background-color: var(--black);
     margin-top: 0px;
     text-decoration: none;
-    padding: 4px 17px;
+    padding: 4px 12px;
     border-radius: 20px;
 }
 
