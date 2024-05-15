@@ -7,3 +7,12 @@
     position: fixed;
     z-index: 8;
 }
+
+.topbar h5 {
+    color: var(--white);
+    font-size: clamp(1rem, 4.3vw, 1.2rem);
+    position: absolute;
+    top: 50%; /* Centra verticalmente respecto al topbar */
+    transform: translateY(-50%); /* Ajusta la posición vertical */
+    margin-left: 11%; /* Separación desde el lado izquierdo */
+}
