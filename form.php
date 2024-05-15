@@ -5,21 +5,26 @@ $apellido = $_POST['last_name'];
 $telefono = $_POST['telefono'];
 $email = $_POST['email'];
 $asunto = $_POST['asunto'];
-$mensaje = $_POST['message'];
+$mensajeUsuario = $_POST['message'];
 
-//cuerpo del mensaje
-$mensaje = "Este mensaje fue enviado por " . $nombre . ",\r\n";
-$mensaje .= "Su email es: " . $mail . " \r\n";
-$mensaje .= "El asunto es: " . $asunto . " \r\n";
-$mensaje .= "Mensaje: " . $_POST['mensaje'] . " \r\n";
-$mensaje .= "Enviado el: " . date('d/m/Y', time());
+// Construir el cuerpo del mensaje del correo electrónico
+$mensajeCorreo = "Este mensaje fue enviado por " . $nombre . " " . $apellido . ",\r\n";
+$mensajeCorreo .= "Su email es: " . $email . " \r\n";
+$mensajeCorreo .= "El teléfono es: " . $telefono . " \r\n";
+$mensajeCorreo .= "El asunto es: " . $asunto . " \r\n";
+$mensajeCorreo .= "Mensaje: " . $mensajeUsuario . " \r\n";
+$mensajeCorreo .= "Enviado el: " . date('d/m/Y', time());
 
 $destinatario = 'jeronimonunez96@gmail.com';
-$asunto = 'Mail enviado desde nacred.site';
+$asuntoCorreo = 'Mail enviado desde nacred.site';
 
-//funcion mail delcarada desde php
-mail($destinatario, $asunto, utf8_decode($mensaje), $header);
+// Envío del correo electrónico
+$mailEnviado = mail($destinatario, $asuntoCorreo, utf8_decode($mensajeCorreo));
 
-//Redireccion al haber enviado el formulario
-header('Location:exito.html');
+// Redireccionamiento después de enviar el formulario
+if ($mailEnviado) {
+    header('Location: exito.html');
+} else {
+    echo 'Hubo un error al enviar el formulario. Por favor, inténtalo de nuevo.';
+}
 ?>
